@@ -648,7 +648,7 @@ footer nav .one-third{
   text-align:right;
   float:right;
   margin-right: 10px;
-  margin-top: 8px;
+  margin-top: 0px;
 
 }
 
@@ -796,5 +796,49 @@ footer nav .one-third{
   margin: 5px 0 0;
 }
 
+/** style for the triangle */
+.settings .dropit .dropit-open .dropit-submenu:after {
+   content: "\A";
+   position: relative;
+   border-style: solid;
+   border-width: 8px;
+   border-color: #fff transparent transparent transparent;
+
+   display: block;
+   width: 0;
+   z-index: 1;
+   top: 16px;
+   left: 115px;
+}
+/** main menu box */
+.settings .dropit .dropit-submenu {
+   position: absolute;
+   top: -162px;
+   z-index: 1000;
+   display: none;
+   min-width: 100px;
+   list-style: none;
+   padding: 0 10px; 
+   margin: 0;
+}
+/** hide that square cog */
+#left-nav > div.settings > ul > li > ul > li:nth-child(2) > a.fa.fa-cog {
+ display: none;
+}
+
+/* update ancors in menu */
+#left-nav > div.settings > ul > li > ul > li a{
+ width:120px;
+ float:none;
+ display:inline-block;
+ text-align:left;
+ font-size:.9em;
+ padding:3px 0px; 
+}
+
+/* This is for the cog */
+#left-nav > div.settings > ul > li > a {
+  margin-top: -13px;
+}
 
 
